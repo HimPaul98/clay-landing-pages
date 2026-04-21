@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clay Landing Pages</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #080808; color: #fff;
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding: 40px 20px;
+    }
+    .container { max-width: 560px; width: 100%; }
+    .logo { margin-bottom: 40px; }
+    .logo img { height: 28px; }
+    h1 { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+    p { color: #888; margin-bottom: 36px; font-size: 15px; }
+    .pages { display: flex; flex-direction: column; gap: 12px; }
+    a.page-link {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 22px; background: #111; border: 1px solid #1f1f1f;
+      border-radius: 12px; text-decoration: none; color: #fff;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    a.page-link:hover { border-color: #f97316; background: #161616; }
+    .page-info .name { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 15px; margin-bottom: 3px; }
+    .page-info .meta { color: #666; font-size: 13px; }
+    .arrow { color: #f97316; font-size: 18px; }
+    .dot {
+      display: inline-block; width: 8px; height: 8px; border-radius: 50%;
+      margin-right: 8px; vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6778506d788ebf16fef48551_Clay%20primary%20logo.avif" alt="Clay" />
+    </div>
+    <h1>Personalized Landing Pages</h1>
+    <p>Outbound prospect pages — select a contact below.</p>
+    <div class="pages">
+      <a class="page-link" href="/sarah-mitchell-retool.html">
+        <div class="page-info">
+          <div class="name"><span class="dot" style="background:#f97316;"></span>Sarah Mitchell</div>
+          <div class="meta">VP of Revenue Operations · Retool</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="page-link" href="/marcus-chen-linear.html">
+        <div class="page-info">
+          <div class="name"><span class="dot" style="background:#8b5cf6;"></span>Marcus Chen</div>
+          <div class="meta">Head of Growth · Linear</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="page-link" href="/emily-rodriguez-loom.html">
+        <div class="page-info">
+          <div class="name"><span class="dot" style="background:#06b6d4;"></span>Emily Rodriguez</div>
+          <div class="meta">Director of Sales Development · Loom</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="page-link" href="/james-okonkwo-webflow.html">
+        <div class="page-info">
+          <div class="name"><span class="dot" style="background:#3b82f6;"></span>James Okonkwo</div>
+          <div class="meta">GTM Engineer · Webflow</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+      <a class="page-link" href="/rachel-goldstein-airtable.html">
+        <div class="page-info">
+          <div class="name"><span class="dot" style="background:#eab308;"></span>Rachel Goldstein</div>
+          <div class="meta">VP of Sales · Airtable</div>
+        </div>
+        <span class="arrow">→</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
