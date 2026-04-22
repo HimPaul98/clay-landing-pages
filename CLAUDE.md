@@ -179,7 +179,7 @@ All pages are hosted on Vercel. **Production URL:** https://clay-landing-pages-d
 | James Okonkwo · Webflow | `/james-okonkwo-webflow.html` | Blue `#3b82f6` |
 | Rachel Goldstein · Airtable | `/rachel-goldstein-airtable.html` | Gold `#eab308` |
 
-**To redeploy after changes:** run `vercel --prod --yes` from the project folder.
+**To redeploy after changes:** simply `git push` to the `main` branch on GitHub — Vercel is connected to the GitHub repository and will auto-deploy to production on every push. Running `vercel --prod --yes` manually is no longer required.
 
 ---
 
@@ -219,6 +219,10 @@ git push
 ---
 
 ## Change Log
+
+### 2026-04-22 (continued)
+
+- **Connected GitHub to Vercel** — `HimPaul98/clay-landing-pages` is now linked to the Vercel project. Every `git push` to `main` auto-deploys to production at https://clay-landing-pages-dun.vercel.app
 
 ### 2026-04-22
 
