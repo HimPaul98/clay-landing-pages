@@ -198,6 +198,24 @@ Each page keeps the same dark theme and orange Clay CTA buttons, but the headlin
 
 ---
 
+## GitHub
+
+Project is version-controlled and pushed to GitHub.
+
+- **Repository:** https://github.com/HimPaul98/clay-landing-pages
+- **GitHub account:** HimPaul98
+- **Branch:** `main`
+- **Files tracked:** all 10 project files (5 landing pages, index, CLAUDE.md, CSV, ICP + value prop txts)
+
+**To push future changes:**
+```
+git add .
+git commit -m "describe what you changed"
+git push
+```
+
+---
+
 ## Owner
 
 Account Executive at clay.com — Himadri Paul (`himadripaul98@gmail.com`)
