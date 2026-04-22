@@ -144,7 +144,9 @@ A fully self-contained static HTML landing page for **Sarah Mitchell, VP of Reve
 - **CTA placement:** "Book a Demo" / calendar is at the **bottom** of the page, after all pain points and solutions have been addressed
 - **Calendar:** Always use the same custom calendar widget with the Calendly placeholder URL
 - **No external JS frameworks** — vanilla HTML/CSS/JS only
-- **Logo:** Always use the official Clay logo from `https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6778506d788ebf16fef48551_Clay%20primary%20logo.avif`
+- **Logo:** Always use the official Clay logo from `https://cdn.prod.website-files.com/61477f2c24a826836f969afe/6778506d788ebf16fef48551_Clay%20primary%20logo.avif` — Clay's CDN only provides a dark-text logo with no white variant. Always wrap it in a white pill container so it's visible on the dark background: `background: #fff; padding: 5px 10px; border-radius: 6px;` (sub-pages) or `padding: 6px 12px; border-radius: 8px;` (index)
+- **Logo size:** `height: 40px` on index.html, `height: 28px` on all sub-pages
+- **Sub-page links in index.html:** Always use relative paths (e.g. `sarah-mitchell-retool.html`, not `/sarah-mitchell-retool.html`) — absolute paths break when opening the file locally
 - **Fonts:** `Space Grotesk` for headlines, `DM Sans` for body — do not revert to Inter
 - **Hero layout:** Split (left: copy + CTAs, right: mock Clay product panel) — hide right panel on mobile
 - **Pain points:** Numbered statement list format (not cards)
@@ -213,6 +215,18 @@ git add .
 git commit -m "describe what you changed"
 git push
 ```
+
+---
+
+## Change Log
+
+### 2026-04-22
+
+- **Restored index.html** from initial git commit after accidental edits corrupted it
+- **Fixed sub-page links** in index.html — changed all hrefs from absolute (`/page.html`) to relative (`page.html`) so links work when opening the file locally, not just on Vercel
+- **Increased Clay logo size** — index.html: `28px → 40px`; all 5 sub-pages: `20px → 28px`
+- **Wrapped Clay logo in white pill container** — Clay's CDN has no white logo variant; added `background: #fff` with padding and border-radius so the dark-text logo is visible against the `#080808` background
+- **Redeployed to Vercel production** — commit `36cb747`, live at https://clay-landing-pages-dun.vercel.app
 
 ---
 
